@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Formularios (forms)</h1>
+    <p>
+      los formularios son estructuras para capturar datos del cliente
+      (entiendase cliente por usuarios)
+    </p>
+    <h2>inputs -> busquedas, clicks</h2>
+
+    <h2>form -> get (obtener) -> post (enviar)</h2>
+    <p>
+      <b>
+        obtener datos ej: escribir en un buscador y recibir un dato en contreto
+        devuelta
+      </b>
+    </p>
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" placeholder="nombre" id="nombre" />
+      <p>
+        <b> el placeholder solo se ,uestras antes de comenzar a escribir </b>
+      </p>
+      <p>
+        <b>
+          label busca en el archivo un elemento id para poder tener el artibuto
+          del mismo
+        </b>
+      </p>
+      <br />
+      <br />
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" placeholder="Contraseña" id="contrasena" />
+      <br /><br /><br />
+      <label for="Color">Color:</label>
+      <input type="color" />
+      <p>
+        en el input color no tiene sentido utilizar el placeholder ya que no
+        tiene proposito darle un dato al usuarios
+      </p>
+      <br />
+      <br />
+      <label for="date">fechas o calendarios</label>
+      <input type="date" />
+      <input type="datetime-local" />
+      <input type="month" />
+      <p>
+        el input para tomar fecha puede ser de tipo datetime-local, date ó month
+      </p>
+
+      <label for="email">Email:</label>
+      <input type="email:" placeholder="Email" id="email" autocomplete="off" />
+      <br />
+      <br />
+      <label for="archivo">Archivo:</label>
+      <input type="file" id="archivo" />
+      <br />
+      <br />
+      <label for="imagen">Imagen:</label>
+      <input type="image" id="imagen" />
+      <p>sugerencia: no utilizareste tipo de input ("image")</p>
+      <label for="Numeros">Números:</label>
+      <input type="number" id="Numeros" max="15" min="5" />
+      <br />
+      <br />
+      <label for="rango">rango:</label>
+      <input type="range" id="rango" min="10" max="20" />
+      <p>el artibuto range por defecto va a aparecer en la mitad</p>
+      <br />
+      <br />
+      <label for="Telefono">Teléfono</label>
+      <input type="tel" id="Telefono" pattern="[0-9]{4}-[0-9]{4}" />
+      <p>
+        El input de tipo tel requiere un patrón (atributo pattern) para validar
+        el dato.
+        <br />
+        Por ejemplo: <code>pattern="[0-9]{4}-[0-9]{4}"</code> <br />
+        El inicio ([0-9]{4}) indica que se permiten números del 0 al 9, que
+        deben ser 4, luego se debe escribir un guión y finalmente otros 4
+        números.
+      </p>
+      <label for="Radio">Radio</label>
+      <input type="radio" name="Radio" id="Radio" />
+      <span>Opción 1</span>
+      <input type="Radio" id="Radio" name="Radio" />
+      <span>Opción 2</span>
+      <p>
+        la etiqueta (span) Es un contenedor en línea. Sirve para aplicar estilo
+        al texto o agrupar elementos en línea.
+        <b>(no abarcar todo el espacio en la pagina) </b>
+      </p>
+
+      <label for="checkbox">checkbox</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+      <p>
+        diferencias entres checkbox y radio es que en checkbox te deja
+        seleccionar varios valores y radio solo te permite escoger una opcion
+        unica
+      </p>
+      <br />
+      <br />
+      <br />
+      <button>Enviar</button>
+      <p>
+        si un botoon no especifica su tipo
+        <b>y se encuentra en un form </b> automáticamente su tipo pasa a ser
+        <b>submit !!!</b>
+      </p>
+
+      <button type="button">tipo button</button>
+      <br />
+      <br />
+      <br />
+      <button type="reset">reset</button>
+    </form>
+  </body>
+</html>
